@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root{
+    --verde:#076b19;
+    --cor_azul:#192559;
+    --font_titulo:'Playfair Display', serif;
+    --fonte_padrao:Arial, Helvetica, sans-serif;
+}
+body{
+    font-family: var(--fonte_padrao);
+    color: white;
+}
+main{
+    background-image: linear-gradient(to bottom, #192559, #25357b,#1931a0);
+}
+#home{
+    height: 100vh;
+    background: url('../imagens/brasil.jpg') center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.402);
+}
+.home__titulo{
+    color: white;
+    font-size: 2em;
+    font-family: var(--font_titulo);
+    font-weight: 900;
+}
+#titulo1{
+    text-align: center;
+    font-style: italic;
+    padding: 36px;
+    font-size: 3em;
+}
+#titulo2{
+    text-align: center;
+    
+}
+#home__botao{
+    background-color: var(--verde);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 250px;
+    padding: 17px;
+    margin-bottom: -276px;
+    margin-top:75px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.402);
+    box-sizing: border-box;
+}
+#home__botao:hover{
+    background-color:#16ba34b8 ;
+    transform: translate(3% , -3%);
+    box-shadow: 1px 1px 10px black;
+    border: 1px solid white;
+    
+}
+section{
+    height: 100vh;
+}
+.historia__titulo{
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-family: var(--font_titulo);
+    padding: 30px;
+}
+.caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.historia__lista{
+    display: flex;
+    gap: 40px;
+}
+.historia__lista li{
+    background-color: var(--verde);
+    padding: 18px;
+    border-radius: 5px;
+    text-align: center;
+}
+.historia__lista li:hover{
+    background-color:#16ba34b8 ; 
+    transform: translate(3% , -3%);
+    box-shadow: 1px 1px 10px black;
+    border: 1px solid white;
+}
+.historia__lista a{
+    color: white;
+    text-decoration: none;
+}
+#imagens{
+    background-color: black;
+    width: 269px;
+    height: 269px;
+    border-radius: 50% 50%;
+}
+#historias{
+    background-color: var(--cor_azul);
+    height: 75vh;
+    width: 96vw;
+    border-radius: 11px;
+}
+#culinaria{
+    height: 100vh;
+    background-color: var(--cor_azul);
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #1931a0;
+}
+@media (max-width:1220px) {
+    .historia__lista{
+        width: 90vw;
+        overflow: scroll; 
+        gap: 10px;
+        padding: 20px;
+    }
+    .historia__lista li{
+        margin: 0px;
+    }
+    .historia__titulo{
+        padding: 10px;
+    }
+    a{
+        white-space: nowrap;
+    }
+    #segundo{
+        gap:152px;
+    }
+
+}
+@media (max-width: 700px){
+      #seguundo{
+        margin-left: 0%;
+      }
+}
